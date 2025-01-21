@@ -17,7 +17,7 @@ connection_string = f"postgresql+psycopg://{user}:{password}@{host}:{port}/{db_n
 engine = create_engine(connection_string)
 
 # Execute a query using Pandas
-query = "select f.memberid, firstname, lastname, description, mlevel from Gym.Members f JOIN (select * from Gym.Classes y JOIN Gym.SignUps p on y.ClassID=p.ClassID) t on f.MemberID=t.MemberId limit 20;"
+query = "select f.memberid, firstname, lastname, mlevel, checkindate  from Gym.Members f JOIN Gym.CheckIns t on f.MemberID=t.MemberId ORDER BY checkindate ASC limit 30;"
 df = pd.read_sql_query(query, engine)
 
 # Display or save the DataFrame
