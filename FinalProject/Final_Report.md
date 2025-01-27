@@ -15,6 +15,7 @@ Here is a breakdown of each step:
 - I created six tables gym members, personal trainers, classes, sign ups, checkins, and payments.
 - I linked all the tables and checked to ensure compliance with third normal form.
 - [This is a link the the diagram](https://github.com/aelliott26/ITE140/blob/main/FinalProject/ERD.png)
+![This is a image of the the diagram](ERD.png)
 
 ### Database Implementataion
 - To impliment the databse I connected to our class database on postgres.
@@ -38,3 +39,4 @@ Here is a breakdown of each step:
 - Then I used a pivot table to count the amount of times members of each different level of membership checked in. 
 - I then created a graph for this same purpose with a slicer based on the day to see which level of membership had th emost people check in on a certain day.
 - [This is a link to download the Excel Spreadsheet](https://github.com/aelliott26/ITE140/blob/main/FinalProject/Final_Project.xlsx)
+![Image of Pivot Table](PivotTable.png)
