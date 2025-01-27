@@ -155,3 +155,8 @@ INSERT INTO Gym.SignUps (MemberID, ClassID) VALUES
 (6, 4),  
 (4, 7),  
 (7, 1);
+
+CREATE VIEW MemberCheckin AS
+select f.memberid, firstname, lastname, mlevel, checkindate  
+from Gym.Members f JOIN Gym.CheckIns t on f.MemberID=t.MemberId 
+ORDER BY checkindate;
